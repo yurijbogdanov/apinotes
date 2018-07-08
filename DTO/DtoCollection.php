@@ -81,7 +81,7 @@ class DtoCollection implements DtoCollectionInterface
      */
     public function remove($key)
     {
-        if (!isset($this->elements[$key]) && ! \array_key_exists($key, $this->elements)) {
+        if (!isset($this->elements[$key]) && !\array_key_exists($key, $this->elements)) {
             return null;
         }
 
